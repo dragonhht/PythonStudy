@@ -9,10 +9,14 @@ for line in f:
     print line,  # 后面加一个逗号，去掉原来默认增加的\n
 f.close()
 
-# 创建文件 （以写方式打开文件）
-f2 = open("file/test2.txt", "w")
-f2.write("这是一个创建文件的测试")
-f2.close()
+# 创建文件 （以写方式打开文件）(异常的处理)
+try:
+    f2 = open("file/test2.txt", "w")
+    f2.write("这是一个创建文件的测试")
+except Exception, e:
+    print "写入错误",  e
+finally:
+    f2.close()
 
 # 以只读的方式打开文件
 f3 = open("file/test2.txt", "r")

@@ -13,7 +13,18 @@ class ClassTest:
     def get_name(self):
         return self.name
 
+    # 私有
+    def _test_1_(self):
+        pass
 
-test = ClassTest("你好呀")
-s = test.get_name()
-print s
+    # 私有
+    def __test_2(self):
+        pass
+
+
+if __name__ == '__main__':
+    test = ClassTest("你好呀")
+    s = test.get_name()
+    print s
+
+
