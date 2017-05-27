@@ -21,6 +21,16 @@ class ClassTest:
     def __test_2(self):
         pass
 
+    # 类方法
+    @classmethod
+    def class_method(cls):
+        pass
+
+    # 静态方法
+    @staticmethod
+    def static_method():
+        pass
+
 
 if __name__ == '__main__':
     test = ClassTest("你好呀")

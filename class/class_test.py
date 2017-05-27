@@ -6,3 +6,5 @@ test = ClassTest("慌张")
 
 c = test.get_name()
 print c
+
+

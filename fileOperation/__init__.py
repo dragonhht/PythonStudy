@@ -4,7 +4,7 @@ import os
 import fileinput
 
 # 打开文件
-f = open("file/test.txt")
+f = open("file/test2.txt")
 for line in f:
     print line,  # 后面加一个逗号，去掉原来默认增加的\n
 f.close()
@@ -25,20 +25,20 @@ for line in f3:
 f3.close()
 
 # 以追加模式打开文件
-f4 = open("file/test.txt", "a")
+f4 = open("file/test2.txt", "a")
 f4.write("\n你好呀")
 f4.close()
 
 # 使用with打开文件
-with open("file/test.txt", "r") as f5:
+with open("file/test2.txt", "r") as f5:
     print f5.read()
 
 # 查看文件的状态
-file_stat = os.stat("file/test.txt")
+file_stat = os.stat("file/test2.txt")
 print file_stat
 
 # 读取大文件时
-for line in fileinput.input("file/test.txt"):
+for line in fileinput.input("file/test2.txt"):
     print line,
 
 # 复制图片
